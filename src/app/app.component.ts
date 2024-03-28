@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { inject } from '@angular/core/testing';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,4 +11,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'spotify-clone-angular-springboot';
+
+  private faIconLibrary : FaIconLibrary = inject(FaIconLibrary)
 }
